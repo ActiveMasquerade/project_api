@@ -1,48 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    border-radius: 5px;
 }
-.topnav {
-    overflow: hidden;
-    background-color: black;
-    height: 60px;
-}
-.button {
-    background-color: black;
-    background-image: url("button-removebg-preview_1_-removebg-preview.png");
-    width: 60px;
-    height: 60px;
-    float: left;
-    border: none;
-    cursor: pointer;
-
-}
-.button:hover {
-    background-color: white;
-}
-
-.link{
-    color: beige;
-    text-align: center;
-    float: left;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    padding: 22px 
-}
-.link:hover {
-    background-color: aliceblue;
-    color: black;
-}
-.row1 {
+.contain {
     display: flex;
-    height: 200px;
-    width: auto;
-    background-color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height : 100vh;
+}
+.calist {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aqua;
+}
+.todo {
+    flex: 2;
+    background-color: blueviolet;
+}
+.calender {
+    flex: 1;
+    background-color: rgb(80, 74, 56);
 }
 
-.row2 {
+.anything {
+    flex: 3;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.4fr 1fr 1fr 1fr ;
+    background-color: rgb(39, 29, 29);
+}
+.status {
+    grid-area: 1 / 1 / 2 / 5 ;
+    background-color: rgb(255, 255, 255);  
     
 }
