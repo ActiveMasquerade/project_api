@@ -10,12 +10,15 @@
 </head>
 <body>
     <div class="header">
+        <div class="welcome">
+            <h1>Welcome back</h1>
+            <h2>username</h2>
+        </div>
         <img  src="pfp.jpg" class="image"></img>
    </div>
     <div class="contain">
         <div class="calist">
             <div class="calender">
-                <div class="time"><h1 id="time"></h1></div>
                 <select name="Month" id="Month">
                     <option>JAN</option>
                     <option>FEB</option>
@@ -37,7 +40,54 @@
                 </select>
                 
                 <div class="line"></div>
-            </div>
+                <div class="calbody">
+                    <div class="calday">
+                        <div class="weekend">S</div>
+                        <div>M</div>
+                        <div>T</div>
+                        <div>W</div>
+                        <div>T</div>
+                        <div>F</div>
+                        <div class="weekend">S</div>
+                    </div>
+                    <div class="caldates">
+                        <div class="caldate-grey"><span>28</span></div>
+                        <div class="caldate-grey"><span>29</span></div>
+                        <div class="caldate-grey"><span>30</span></div>
+                        <div class="caldate"><span>1</span></div>
+                        <div class="caldate"><span>2</span></div>
+                        <div class="caldate"><span>3</span></div>
+                        <div class="caldate"><span>4</span></div>
+                        <div class="caldate"><span>5</span></div>
+                        <div class="caldate"><span>6</span></div>
+                        <div class="caldate"><span>7</span></div>
+                        <div class="caldate"><span>8</span></div>
+                        <div class="caldate"><span>9</span></div>
+                        <div class="caldate"><span>10</span></div>
+                        <div class="caldate"><span>11</span></div>
+                        <div class="caldate"><span>12</span></div>
+                        <div class="caldate"><span>13</span></div>
+                        <div class="caldate"><span>14</span></div>
+                        <div class="caldate"><span>15</span></div>
+                        <div class="caldate"><span>16</span></div>
+                        <div class="caldate"><span>17</span></div>
+                        <div class="caldate"><span>18</span></div>
+                        <div class="caldate"><span>19</span></div>
+                        <div class="caldate"><span>20</span></div>
+                        <div class="caldate"><span>21</span></div>
+                        <div class="caldate"><span>22</span></div>
+                        <div class="caldate"><span>23</span></div>
+                        <div class="caldate"><span>24</span></div>
+                        <div class="caldate"><span>25</span></div>
+                        <div class="caldate"><span>26</span></div>
+                        <div class="caldate"><span>27</span></div>
+                        <div class="caldate"><span>28</span></div>
+                        <div class="caldate"><span>29</span></div>
+                        <div class="caldate"><span>30</span></div>
+                        <div class="caldate"><span>31</span></div>
+                      </div>
+                    </div>
+                </div>
             <div class="todo">
                 <h1 class="textforto">TO-DOs FOR THE DAY</h1>
                 <div class="line"></div>
@@ -59,12 +109,21 @@
             <div class="Email">
                <h1 class="etext">Email</h1>
                <div class="line"></div>
-               <div></div>
+               <ul class="emailist">
+                <li class="impmail"><h1>Mail from Devraj</h1>
+                <h2>can you please fix the admin....</h2></li>
+                <li class="mail"><h1>Mail from Rupak</h1>
+                <h2>images you asked for....</h2></li>
+                <li></li>
+                <li></li>
+               </ul>
             </div>
         
-            <div class="placeholder2"></div>
-            <div class="placeholder3"></div>
-            <div class="placeholder4">
+            <div class="notif"></div>
+            <div class="budgetrack">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="productivity">
                 <div class="chart_">
                     <table class="charts-css line">
                         <caption>Productivity overtime</caption>
@@ -80,21 +139,5 @@
             </div>
         </div>
     </div>
-    <script>
-        //for clock
-        window.addEventListener("load", () => {
-  clock();
-  function clock() {
-    const hours = today.getHours();
-    const minutes = today.getMinutes();
-    const seconds = today.getSeconds();
-    const hour = hours < 10 ? "0" + hours : hours;
-    const minute = minutes < 10 ? "0" + minutes : minutes;
-    const second = seconds < 10 ? "0" + seconds : seconds;
-    const time = hours + ":" + minute + ":" + second ;
-    document.getElementById("time").innerHTML = time;
-    setTimeout(clock, 1000);
-  }})
-    </script>
 </body>
 </html>
