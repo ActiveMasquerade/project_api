@@ -163,6 +163,7 @@ h1 {
 }
 @media all and (max-width: 1200px) {
     .contain {
+        width: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -191,6 +192,9 @@ h1 {
     }
     .placeholder4 {
         flex: 1;
+    }
+    #task-list li {
+        width: 70vw;
     }
 
 }
