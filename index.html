@@ -8,31 +8,72 @@
     <link rel="stylesheet" href="buttons.css">
 </head>
 <body>
+    <div class="header">
+        <div class="image"></div>
+   </div>
     <div class="contain">
         <div class="calist">
             <div class="calender">
+                <div class="time"><h1 id="time"></h1></div>
+                <select name="Month" id="Month">
+                    <option>JAN</option>
+                    <option>FEB</option>
+                    <option>MAR</option>
+                    <option>APR</option>
+                    <option selected>MAY</option>
+                    <option>JUN</option>
+                    <option>JUL</option>
+                    <option>AUG</option>
+                    <option>SEPT</option>
+                    <option>OCT</option>
+                    <option>NOV</option>
+                    <option>DEC</option>
+                </select>
                 
+                <div class="line"></div>
             </div>
             <div class="todo">
-                <h1 class="textforto">TO-DO List</h1>
+                <h1 class="textforto">TO-DOs FOR THE DAY</h1>
+                <div class="line"></div>
                 <form>
                     <input type="text" id="task" name="task" placeholder="Enter task" class="hinput">
-                    <button type="button" onclick="addTask()">Add</button>
+                    <button type="button" class="button">+</button>
                 </form>
+                <div class="list">
                 <ul id="task-list">
-        
+                    <li>some item</li>
+                    <li>another</li>
+                    <li>another</li>
                 </ul>
+                </div>
             </div>
         </div>
         <div class="anything">
-            <div class="status">
-                <div class="pfp"></div>
+
+            <div class="Email">
+               <h1 class="etext">email</h1>
             </div>
-            <div class="placeholder1"></div>
+        
             <div class="placeholder2"></div>
             <div class="placeholder3"></div>
             <div class="placeholder4"></div>
         </div>
     </div>
+    <script>
+        //for clock
+        window.addEventListener("load", () => {
+  clock();
+  function clock() {
+    const hours = today.getHours();
+    const minutes = today.getMinutes();
+    const seconds = today.getSeconds();
+    const hour = hours < 10 ? "0" + hours : hours;
+    const minute = minutes < 10 ? "0" + minutes : minutes;
+    const second = seconds < 10 ? "0" + seconds : seconds;
+    const time = hours + ":" + minute + ":" + second ;
+    document.getElementById("time").innerHTML = time;
+    setTimeout(clock, 1000);
+  }})
+    </script>
 </body>
 </html>
