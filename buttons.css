@@ -108,9 +108,9 @@ h1 {
     height: 30px;
     margin: 0px;
     border: 5px;
-    border-color: #1f7210;
     margin-left: 5px;
-    color: #1f7210;
+    color: aliceblue;
+    opacity: 0.9;
     font-size: 20px;
     background-color: #19191b;
     cursor: pointer;
@@ -160,4 +160,37 @@ h1 {
 .etext {
     padding-top: 3%;
     padding-bottom: 2%;
+}
+@media all and (max-width: 1200px) {
+    .contain {
+        display: flex;
+        flex-direction: column;
+    }
+    .calist {
+        flex: 1;
+    }
+
+    .image {
+        height: auto;
+        width: auto;
+    }
+    .anything {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+    }
+    .Email {
+        flex: 1;
+        min-width: 0.25vw;
+    }
+    .placeholder2 {
+        flex: 1;
+    }
+    .placeholder3 {
+        flex: 1;
+    }
+    .placeholder4 {
+        flex: 1;
+    }
+
 }
