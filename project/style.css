@@ -1,0 +1,48 @@
+body {
+    background-color: #1d1d1d;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search {
+    text-align: center;
+    font-size: medium;
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: grey;
+    color: rgb(206, 182, 182);    
+}
+.go {
+    height: 50px;
+    background-color: grey;
+    width: 50px;
+    border:none;
+    border-radius: 20px;
+}
+.go:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.search:hover {
+    opacity: 0.8;
+}
+.card {
+    justify-content:center;
+    display: flex;
+    border-radius: 20px;
+    width: 260px;
+    height: 300px;
+    background-color: cornflowerblue;
+    margin: auto;
+    margin-top: 10px;
+}
+.pokeimage {
+    height: 200px;
+    width: 200px;
+
+}
